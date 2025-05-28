@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Afsheen Fatima – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/profile.jpg" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<!-- Chatbot Popup -->
+<div class="chatbot-container">
+  <button id="chatbot-toggle">💬</button>
+  <div class="chatbot-popup" id="chatbot-popup">
+    <div class="chatbot-header">Afsheen's AI Bot <span id="chatbot-close">✖</span></div>
+    <div class="chatbot-body" id="chatbot-body">
+      <div class="bot-message">Hi there! 👋 I'm Afsheen's virtual assistant. How can I help you?</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbot-input" placeholder="Type your message..." />
+      <button id="chatbot-send">➤</button>
+    </div>
+  </div>
+</div>
+
+<body>
+
+  <div id="particles-js"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Afsheen</a>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="darkToggle" title="Toggle Dark Mode">🌙</button>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I’m <span class="highlight">Syed Afsheen Fatima</span></h1>
+        <p class="typing" id="typing-text"></p>
+        <p class="hero-sub">ECE Student | Tech Explorer | Dreamer ✨</p>
+        <a href="resume_afsheen_cleaned.pdf" class="btn btn-primary" download>📄 Download Resume</a>
+    
+
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Afsheen's Profile Picture" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section container">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m a passionate Electronics and Communication Engineering student from MJCET. I explore Arduino systems, AI projects, and love to design and organize technical events. I aim to study abroad and innovate with empathy and purpose.</p>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card"><div class="project-front">Smart Home Automation</div><div class="project-back">IoT-controlled automation using sensors and voice assistant.</div></div>
+      <div class="project-card"><div class="project-front">Ultrasonic RPM Control</div><div class="project-back">Johnson motor slows down as it approaches an obstacle using an ultrasonic sensor.</div></div>
+      <div class="project-card"><div class="project-front">AI Chatbot Demo</div><div class="project-back">A simple AI chatbot that responds to basic questions.</div></div>
+      <div class="project-card"><div class="project-front">Research Paper</div><div class="project-back">Published on smart automation with sensor networks.</div></div>
+      <div class="project-card"><div class="project-front">LED Traffic Signal</div><div class="project-back">Traffic control using LED signals with Arduino.</div></div>
+      <div class="project-card"><div class="project-front">Parking Car Model</div><div class="project-back">Mini automated car parking system designed on Tinkercad.</div></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-bars">
+      <div class="skill-bar"><p>Arduino</p><div class="bar-bg"><div class="bar-fill" style="width: 90%"></div></div></div>
+      <div class="skill-bar"><p>Python</p><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div></div>
+      <div class="skill-bar"><p>AutoCAD</p><div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div></div>
+      <div class="skill-bar"><p>Robotics</p><div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div></div>
+      <div class="skill-bar"><p>Poster Design (Canva)</p><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div></div>
+      <div class="skill-bar"><p>C Language</p><div class="bar-bg"><div class="bar-fill" style="width: 88%"></div></div></div>
+      <div class="skill-bar"><p>AI Tools</p><div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div></div>
+      <div class="skill-bar"><p>Ethical Hacking</p><div class="bar-bg"><div class="bar-fill" style="width: 70%"></div></div></div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section container">
+    <h2 class="section-title">Achievements</h2>
+    <ul class="achievements-list">
+      <li>🌟 Selected in Sensors Club</li>
+      <li>🤖 Member of Robotics and Automation Club</li>
+      <li>🛠️ AutoCAD Certified</li>
+      <li>💡 Volunteer: Electrovenza & Hack Sprint</li>
+      <li>🔐 Ethical Hacking Workshop @ IITH</li>
+      <li>🎤 Hosted Girls' Safety Awareness Event</li>
+      <li>🧠 Cleared Design Head Interview Round</li>
+    </ul>
+  </section>
+
+  <!-- Certificates Section -->
+<section id="certificates" class="section container">
+  <h2 class="section-title">Certificate</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-front">Research Paper Publication</div>
+      <div class="project-back">
+        <a href="certificates/Syed_Afsheen_Research.pdf" class="btn" target="_blank">📄 View Certificate</a>
+      </div>
+    </div>
+  
+
+    <div class="project-card">
+      <div class="project-front">IITH Ethical Hacking Workshop</div>
+      <div class="project-back">
+        <a href="certificates/IITH_Ethical_Hacking.pdf" class="btn" target="_blank">📄 View Certificate</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <section id="contact" class="section container">
+    <h2 class="section-title">Contact Me</h2>
+    <form id="contact-form">
+      
+    </form>
+    <div class="social-links">
+      <a href="mailto:fatima061167@gmail.com" target="_blank">📧 Email</a>
+      <a href="https://instagram.com/_afc_afsheen_" target="_blank">📷 Instagram</a>
+      <a href="https://linkedin.com/in/Afsheen Fatima" target="_blank">💼 LinkedIn</a>
+      <a href="https://wa.me/7670912796" target="_blank">📱 WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Syed Afsheen Fatima. All rights reserved.</p>
+    <p class="footer-quote">"Turning passion into innovation." ❤️</p>
+  </footer>
+
+  <button id="backToTop" title="Back to Top">↑</button>
+</body>
+</html>
